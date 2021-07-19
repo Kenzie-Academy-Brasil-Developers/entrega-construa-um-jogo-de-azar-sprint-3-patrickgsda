@@ -122,7 +122,7 @@ body {
 }
 
 
-#botaoJogar {
+.botaoJogar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -147,6 +147,7 @@ body {
 }
 
 .jogar {
+    display: none;
     border: 2px solid transparent;
     border-radius: 10px;
     background-color: darkcyan;

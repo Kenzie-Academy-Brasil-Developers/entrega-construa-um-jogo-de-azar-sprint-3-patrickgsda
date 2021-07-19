@@ -1,6 +1,7 @@
 let buttonAtualJogador = 0
 let buttonAtualComputador = 0
 let partidaAtual = 0
+let noneJogarCont = 0
 
 let arrayList_PPT_PCaux = [
     1,
@@ -13,6 +14,8 @@ let arrayList_PPT_PC = [
     "botoesComputador__items--papel",
     "botoesComputador__items--tesoura"
 ]
+
+let btnJogar = document.getElementById('jogar')
 
 const buttonPedra = document.getElementById("botoesJogador__items--pedra");
 buttonPedra.addEventListener("click", function () {
@@ -28,6 +31,15 @@ buttonPedra.addEventListener("click", function () {
 
         buttonTesoura.classList.remove('ativarButton')
         buttonTesoura.classList.add('desativarButton')
+    }
+
+    if (buttonAtualJogador === 1 && noneJogarCont === 0){
+        btnJogar.style.display = 'flex'
+        noneJogarCont += 1
+    }
+
+    if (partidaAtual !== 0){
+        location.reload()
     }
 });
 
@@ -46,6 +58,15 @@ buttonPapel.addEventListener("click", function () {
         buttonTesoura.classList.remove('ativarButton')
         buttonTesoura.classList.add('desativarButton')
     }
+
+    if (buttonAtualJogador === 2 && noneJogarCont === 0){
+        btnJogar.style.display = 'flex'
+        noneJogarCont += 1
+    }
+
+    if (partidaAtual !== 0){
+        location.reload()
+    }
 });
 
 const buttonTesoura = document.getElementById("botoesJogador__items--tesoura");
@@ -63,13 +84,21 @@ buttonTesoura.addEventListener("click", function () {
         buttonPedra.classList.remove('ativarButton')
         buttonPedra.classList.add('desativarButton')
     }
+
+    if (buttonAtualJogador === 3 && noneJogarCont === 0){
+        btnJogar.style.display = 'flex'
+        noneJogarCont += 1
+    }
+
+    if (partidaAtual !== 0){
+        location.reload()
+    }
 });
 
 let contador = 3
 let buttonJogar = document.getElementById("jogar");
 buttonJogar.addEventListener("click", function () {
     partidaAtual += 1
-    if (buttonAtualJogador !== 0) {
         buttonJogar.disabled = true
         buttonPedra.disabled = true
         buttonPapel.disabled = true
@@ -90,7 +119,6 @@ buttonJogar.addEventListener("click", function () {
                 buttonResetar.style.display = 'block'
             }
         }, 1000)
-    }
 });
 
 let buttonResetar = document.getElementById('botaoResetar');
