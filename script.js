@@ -16,6 +16,7 @@ let arrayList_PPT_PC = [
 ]
 
 let btnJogar = document.getElementById('jogar')
+let pSelecionar = document.getElementById('selecionar')
 
 const buttonPedra = document.getElementById("botoesJogador__items--pedra");
 buttonPedra.addEventListener("click", function () {
@@ -35,6 +36,7 @@ buttonPedra.addEventListener("click", function () {
 
     if (buttonAtualJogador === 1 && noneJogarCont === 0){
         btnJogar.style.display = 'flex'
+        pSelecionar.style.display = 'none'
         noneJogarCont += 1
     }
 
@@ -61,6 +63,7 @@ buttonPapel.addEventListener("click", function () {
 
     if (buttonAtualJogador === 2 && noneJogarCont === 0){
         btnJogar.style.display = 'flex'
+        pSelecionar.style.display = 'none'
         noneJogarCont += 1
     }
 
@@ -87,6 +90,7 @@ buttonTesoura.addEventListener("click", function () {
 
     if (buttonAtualJogador === 3 && noneJogarCont === 0){
         btnJogar.style.display = 'flex'
+        pSelecionar.style.display = 'none'
         noneJogarCont += 1
     }
 

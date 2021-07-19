@@ -9,6 +9,18 @@ body {
     align-items: center;
 }
 
+.Computador__PedraPapelTesoura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
 
 .h1 {
     font-size: large;
@@ -47,6 +59,12 @@ body {
     display: none;
 }
 
+
+.Jogador__PedraPapelTesoura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #jogadorPedra,
 #jogadorPapel,
@@ -203,6 +221,10 @@ body {
     .botoesComputador__items,
     .botoesJogador__items {
         width: 45px;
+    }
+
+    p {
+        font-size: 40px;
     }
 
     .h1 {
