@@ -17,51 +17,51 @@ let arrayList_PPT_PC = [
 const buttonPedra = document.getElementById("botoesJogador__items--pedra");
 buttonPedra.addEventListener("click", function () {
 
-    if(partidaAtual === 0){
-    buttonAtualJogador = 1
+    if (partidaAtual === 0) {
+        buttonAtualJogador = 1
 
-    buttonPedra.classList.remove('desativarButton')
-    buttonPedra.classList.add('ativarButton')
+        buttonPedra.classList.remove('desativarButton')
+        buttonPedra.classList.add('ativarButton')
 
-    buttonPapel.classList.remove('ativarButton')
-    buttonPapel.classList.add('desativarButton')
+        buttonPapel.classList.remove('ativarButton')
+        buttonPapel.classList.add('desativarButton')
 
-    buttonTesoura.classList.remove('ativarButton')
-    buttonTesoura.classList.add('desativarButton')
+        buttonTesoura.classList.remove('ativarButton')
+        buttonTesoura.classList.add('desativarButton')
     }
 });
 
 const buttonPapel = document.getElementById("botoesJogador__items--papel");
 buttonPapel.addEventListener("click", function () {
 
-    if(partidaAtual === 0){
-    buttonAtualJogador = 2
+    if (partidaAtual === 0) {
+        buttonAtualJogador = 2
 
-    buttonPapel.classList.remove('desativarButton')
-    buttonPapel.classList.add('ativarButton')
+        buttonPapel.classList.remove('desativarButton')
+        buttonPapel.classList.add('ativarButton')
 
-    buttonPedra.classList.remove('ativarButton')
-    buttonPedra.classList.add('desativarButton')
+        buttonPedra.classList.remove('ativarButton')
+        buttonPedra.classList.add('desativarButton')
 
-    buttonTesoura.classList.remove('ativarButton')
-    buttonTesoura.classList.add('desativarButton')
+        buttonTesoura.classList.remove('ativarButton')
+        buttonTesoura.classList.add('desativarButton')
     }
 });
 
 const buttonTesoura = document.getElementById("botoesJogador__items--tesoura");
 buttonTesoura.addEventListener("click", function () {
 
-    if(partidaAtual === 0){
-    buttonAtualJogador = 3
+    if (partidaAtual === 0) {
+        buttonAtualJogador = 3
 
-    buttonTesoura.classList.remove('desativarButton')
-    buttonTesoura.classList.add('ativarButton')
+        buttonTesoura.classList.remove('desativarButton')
+        buttonTesoura.classList.add('ativarButton')
 
-    buttonPapel.classList.remove('ativarButton')
-    buttonPapel.classList.add('desativarButton')
+        buttonPapel.classList.remove('ativarButton')
+        buttonPapel.classList.add('desativarButton')
 
-    buttonPedra.classList.remove('ativarButton')
-    buttonPedra.classList.add('desativarButton')
+        buttonPedra.classList.remove('ativarButton')
+        buttonPedra.classList.add('desativarButton')
     }
 });
 
@@ -101,7 +101,7 @@ buttonResetar.addEventListener("click", function () {
 function ganhador() {
 
     if (buttonAtualJogador === buttonAtualComputador) {
-        buttonJogar.innerHTML = 'Você Empatou!!!'
+        buttonJogar.innerHTML = 'Empate!!!'
         buttonJogar.classList.add('empatou')
     }
     if (buttonAtualJogador === 1 && buttonAtualComputador === 2) {
