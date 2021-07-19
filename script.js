@@ -100,9 +100,6 @@ let buttonJogar = document.getElementById("jogar");
 buttonJogar.addEventListener("click", function () {
     partidaAtual += 1
         buttonJogar.disabled = true
-        buttonPedra.disabled = true
-        buttonPapel.disabled = true
-        buttonTesoura.disabled = true
         buttonJogar.style.cursor = 'auto'
         let fight = setInterval(function () {
             buttonJogar.innerHTML = contador--
